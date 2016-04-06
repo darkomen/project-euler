@@ -1,2 +1,2 @@
 # project-euler
-Python scripts for project-ruler
+Python scripts and c program for project-ruler
