@@ -8,7 +8,7 @@ four million, find the sum of the even-valued terms.*/
 
 using namespace std;
 long END = 4000000;
-long summa = 0;
+long addition = 0;
 long number = 0;
 int fibonaci(int i) {
    if(i == 0) {
@@ -25,9 +25,9 @@ int  main() {
     while(number < END){
         number = fibonaci(i);
         if ((number%2 == 0) and (number < END) )
-            summa += number;
+            addition += number;
         i++;
     }
-    cout << summa << endl;
+    cout << addition << endl;
     return 0;
 }

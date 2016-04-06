@@ -7,13 +7,13 @@ Find all multiples of 3 or 5 bellow 1000*/
 
 using namespace std;
 
-int summa = 0;
+int addition = 0;
 int main(){
     for(int i=0;i<1000;i++){
         if (((i%3)==0) or ((i%5)==0)){
-            summa += i;
+            addition += i;
         }
     }
-    cout << summa << "\n";
+    cout << addition << "\n";
     return 0;
 }
