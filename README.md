@@ -1,2 +1,2 @@
 # project-euler
-Python scripts and c/c++ program for project-ruler
+Python scripts and c/c++ program for project-euler (https://projecteuler.net)
