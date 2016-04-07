@@ -16,10 +16,8 @@ bool checkPrime(long long number) {
     if (number <= 1) return false;
     if (number == 2) return true;
     if (number%2 == 0) return false;
-    for(unsigned long long i= 3; i <sqrt(number); i+=2){
-        if(number % i == 0){
-            return false;
-        }
+    for(unsigned long long i= 3; sqrt(number)>=i; i+=2){
+        if(number % i == 0) return false;
     }
     return true;
 }
@@ -29,7 +27,7 @@ int  main() {
     unsigned long long max = 0;
     cout << "Insert a number to calculate the largest factor prime: \t";
     cin >> number;
-    for(long long i = 1; i < sqrt(number); i++){
+    for(long long i = 1; sqrt(number)>=i; i++){
         if(number % i == 0 && checkPrime(i)){
             max = i;
             cout<< max << endl;
