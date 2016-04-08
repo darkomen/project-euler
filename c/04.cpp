@@ -6,8 +6,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 */
 
 #include <iostream>
-#include <math.h>
-#include <string.h>
+
 using namespace std;
 long largest = 0;
 long sample = 0;
