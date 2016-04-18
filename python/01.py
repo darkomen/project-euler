@@ -7,8 +7,8 @@
 # Find all multiples of 3 or 5 bellow 1000
 
 __author__ = 'SLP'
-
-class multiples():
+from time import time
+class Multiples():
     def __init__(self,start,end,numberone, numbertwo):
         """
         Init method
@@ -25,6 +25,7 @@ class multiples():
         self.__numbertwo = numbertwo
         self.__multiples = []
         self.__suma = 0
+        self.__startTime = time()
 
     def calculateMultiples(self):
         self.__multiples = [number for number in range(self.__start, self.__end) if not (number % self.__numberone) or not (number % self.__numbertwo)]
@@ -41,9 +42,9 @@ class multiples():
     def main(self):
         self.calculateMultiples()
         self.sumMultiples()
-        print(self.getMultiples())
         print(self.getSuma())
+        print('Elapsed time: {}'.format(time() - self.__startTime))
 
 if __name__ == '__main__':
-    exercise1 = multiples(0,1000,3,5)
+    exercise1 = Multiples(0,1000,3,5)
     exercise1.main()
